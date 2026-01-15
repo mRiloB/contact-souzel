@@ -1,16 +1,19 @@
 <script lang="ts" setup>
 import ActionBtn from './ActionBtn.vue';
-import { useLinks } from '@/composables/links';
 import WifiBtn from './WifiBtn.vue';
+import { useLinks } from '@/composables/links';
+import WhatsappImg from "@/assets/img/whatsapp.png";
+import InstagramImg from "@/assets/img/instagram.png";
+import PixImg from "@/assets/img/pix.png";
 const uselinks = useLinks();
 </script>
 
 <template>
   <div class="content">
-    <action-btn src="../assets/img/whatsapp.png" @click="uselinks.whatsapp" />
-    <action-btn src="../assets/img/instagram.png" @click="uselinks.instagram" />
+    <action-btn :src="WhatsappImg" @click="uselinks.whatsapp" />
+    <action-btn :src="InstagramImg" @click="uselinks.instagram" />
     <wifi-btn />
-    <action-btn src="../assets/img/pix.png" />
+    <action-btn :src="PixImg" />
   </div>
 </template>
 

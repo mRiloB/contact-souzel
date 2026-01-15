@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
+import WifiImg from "@/assets/img/technology.png";
 import ActionBtn from './ActionBtn.vue';
 
 const snackbar = ref(false);
-const ssid = "MURILO_5G";
-const senha = "@2000Murilo";
+const ssid = "CASA_5G";
+const senha = "12345678";
 
 const connect = () => {
   window.navigator.clipboard.writeText(senha).then(() => {
@@ -16,7 +17,7 @@ const connect = () => {
 </script>
 
 <template>
-  <action-btn src="../assets/img/technology.png" @click="connect" />
+  <action-btn :src="WifiImg" @click="connect" />
 
   <v-snackbar v-model="snackbar">
     Senha copiada com sucesso! Conecte-se na rede {{ ssid }}.

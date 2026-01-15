@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-import { useImages } from '@/composables/images';
-const useimg = useImages();
-const logoImg = useimg.require("../assets/img/ecstudio3d.jpg");
+import logoImg from "@/assets/img/ecstudio3d.jpg";
 </script>
 
 <template>
