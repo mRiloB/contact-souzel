@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import logoImg from "@/assets/img/ecstudio3d.jpg";
+import ECStudio3DImg from '@/assets/img/ecstudio3d.jpg'
 </script>
 
 <template>
   <div class="header">
     <v-avatar size="150" border="lg" color="white">
-      <v-img class="logo" :src="logoImg" alt="Logo da EC Studio 3D." />
+      <v-img class="logo" :src="ECStudio3DImg" alt="Logo da EC Studio 3D." />
     </v-avatar>
     <p class="title">EC Studio 3D</p>
     <p class="address">Rua Raimundo Uchôa Tenório</p>
@@ -18,6 +18,7 @@ import logoImg from "@/assets/img/ecstudio3d.jpg";
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
 }
 
 .title,
@@ -29,5 +30,6 @@ import logoImg from "@/assets/img/ecstudio3d.jpg";
 
 .title {
   font-size: 24px;
+  margin: 10px 0;
 }
 </style>
